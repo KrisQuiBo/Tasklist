@@ -1,0 +1,17 @@
+.position-text {
+  position: relative;
+}
+
+.title-caption {
+  position: absolute;
+  top: 70%;
+  color: white;
+  font-size: 2rem;
+  /* transform: rotate(90deg); */
+  background: black;
+  padding: 1%;
+  opacity: 0.5;
+  width: 100%;
+}
+
+/*# sourceMappingURL=styles.css.map */
