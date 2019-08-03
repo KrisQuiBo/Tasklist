@@ -1,3 +1,15 @@
+  $media-break: 769px;
+  $max-width: 2680px;
+  $media-break-tab: 769px;
+  $media-break-desk: 1024px;
+
+@mixin media($size) {
+      @media (min-width: $media-break-desk) {
+          @content;
+        }
+  }
+
+
 .position-text {
   position: relative;
 }
@@ -12,4 +24,13 @@ background: black;
 padding: 1%;
 opacity: .5;
 width: 100%;
+}
+.container {
+  @include media($media-break-tab) {
+    width: 80%;
+  }
+  @include media($media-break-desk) {
+    width: 40%;
+  }
+
 }
